@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int distance;
+    bool member;
+    double fare = 100;
+
+    cin >> distance >> member;
+
+    if (distance > 10) {
+        fare += (distance - 10) * 20;
+    }
+
+    if (member) {
+        fare = fare * 0.9;
+    }
+
+    cout << "Final Fare: " << fare;
+
+    return 0;
+}
