@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int treasure, x, y;
+    int longBen, blackbeard, remaining, each;
+
+    cin >> treasure >> x >> y;
+
+    longBen = treasure * x / 100;
+    remaining = treasure - longBen;
+
+    blackbeard = remaining * y / 100;
+    remaining = remaining - blackbeard;
+
+    each = remaining / 4;
+
+    cout << longBen << endl;
+    cout << blackbeard << endl;
+    cout << each;
+
+    return 0;
+}
